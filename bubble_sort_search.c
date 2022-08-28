@@ -2,7 +2,7 @@
 
 int main()
 {
-    int num,i,x,y,swap,temp,search;
+    int num,i,x,y,temp,search;
     printf("\nenter the number of integers to enter in the array: ");
     scanf("%d",&num);
     int arr[num];
@@ -15,7 +15,6 @@ int main()
 
     for(x = 0; x < num - 1; x++)
     {     
-        swap=0;
         for(y = 0; y < num - x - 1; y++)
         {  
             if(arr[y] > arr[y + 1])
@@ -23,11 +22,8 @@ int main()
                 temp = arr[y];
                 arr[y] = arr[y + 1];
                 arr[y + 1] = temp;
-                swap=1;
             }
         }
-        if(swap==0)
-        break;
     }
 
     printf("\nenter the integer u want to find: ");
