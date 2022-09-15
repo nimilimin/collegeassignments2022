@@ -10,10 +10,6 @@ void main() {
     for (int i = 0; i < num; ++i)
         scanf("%d", &data[i]);
 
-    printf("You entered: \n");
-    for (int i = 0; i < num; ++i)
-        printf("%d ", *(data + i));
-
     printf("\n ENTER THE NUMBER YOU WANT TO SEARCH : ");
     int number;
     scanf("%d",&number);
